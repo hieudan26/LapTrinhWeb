@@ -55,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -161,6 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634820993091</updated>
       <workItem from="1634820995713" duration="3705000" />
+      <workItem from="1634862468403" duration="4110000" />
     </task>
     <servers />
   </component>

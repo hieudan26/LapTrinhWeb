@@ -2870,7 +2870,7 @@ body.offcanvas-open {
   line-height: 30px;
 }
 .product-details-content .pro-details-quality {
-  display: -webkit-inline-box;
+  /*display: -webkit-inline-box;*/
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 30px 0;
@@ -4481,6 +4481,11 @@ Pages - My Account
 .dashboard_content p a {
   color: #eaaa85;
   font-weight: 500;
+}
+
+.Link-tab {
+  color: #eaaa85;
+  cursor: pointer;
 }
 
 .input-radio span {
@@ -8922,7 +8927,7 @@ Pages - My Account
   display: inline-block;
 }
 .brand-slider .brand-slider-item img {
-  filter: gray;
+  filter: grayscale(0);
   -webkit-filter: grayscale(1);
   -webkit-transition: all 300ms linear;
   transition: all 300ms linear;
@@ -9092,10 +9097,10 @@ Pages - My Account
   color: #000;
   opacity: 1;
 }
-.login-content form > input::-moz-input-placeholder {
-  color: #000;
-  opacity: 1;
-}
+/*.login-content form > input::-moz-input-placeholder {*/
+/*  color: #000;*/
+/*  opacity: 1;*/
+/*}*/
 .login-content form .remember-forget-wrap {
   display: -webkit-box;
   display: -ms-flexbox;

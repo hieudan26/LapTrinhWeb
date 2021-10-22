@@ -4,27 +4,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="robots" content="index, follow" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="robots" content="index, follow"/>
     <title>Mioca - Handmade Goods eCommerce HTML Template</title>
-    <meta name="description" content="Mioca - Handmade Goods eCommerce HTML Template" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Mioca - Handmade Goods eCommerce HTML Template"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Add site Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/png">
 
 
     <!-- vendor css (Icon Font) -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/pe-icon-7-stroke.css" />
-    <link rel="stylesheet" href="assets/css/vendor/font.awesome.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/vendor/pe-icon-7-stroke.css"/>
+    <link rel="stylesheet" href="assets/css/vendor/font.awesome.css"/>
 
     <!-- plugins css (All Plugins Files) -->
-    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/plugins/venobox.css" />
+    <link rel="stylesheet" href="assets/css/plugins/animate.css"/>
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css"/>
+    <link rel="stylesheet" href="assets/css/plugins/venobox.css"/>
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
 
     <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
 
 </head>
 
@@ -40,68 +40,7 @@
 
 
 <!-- Header Area Start -->
-<header>
-    <div class="header-main sticky-nav ">
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-auto align-self-center">
-                    <div class="header-logo">
-                        <a href="index.jsp"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
-                    </div>
-                </div>
-                <div class="col align-self-center d-none d-lg-block">
-                    <div class="main-menu">
-                        <ul>
-                            <li class="dropdown"><a href="index.jsp">Home</a>
-                            </li>
-                            <li><a href="about.jsp">About</a></li>
-                            <li class="position-static"><a href="shop-left-sidebar.jsp">Shop</a>
-                            </li>
-                            <li class=""><a href="coming-soon.jsp">Blog</a>
-                            </li>
-                            <li><a href="contact.jsp">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Header Action Start -->
-                <div class="col col-lg-auto align-self-center pl-0">
-                    <div class="header-actions">
-                        <!-- Single Wedge Start -->
-                        <a href="#" class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchActive">
-                            <i class="pe-7s-search"></i>
-                        </a>
-                        <!-- Single Wedge End -->
-                        <div class="header-bottom-set dropdown">
-                            <button class="dropdown-toggle header-action-btn" data-bs-toggle="dropdown"><i
-                                    class="pe-7s-users"></i></button>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="my-account.jsp">My account</a></li>
-                                <li><a class="dropdown-item" href="checkout.jsp">Checkout</a></li>
-                                <li><a class="dropdown-item" href="login.jsp">Sign in</a></li>
-                            </ul>
-                        </div>
-                        <!-- Single Wedge Start -->
-                        <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
-                            <i class="pe-7s-like"></i>
-                        </a>
-                        <!-- Single Wedge End -->
-                        <a href="#offcanvas-cart"
-                           class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
-                            <i class="pe-7s-shopbag"></i>
-                            <span class="header-action-num">01</span>
-                            <!-- <span class="cart-amount">€30.00</span> -->
-                        </a>
-                        <a href="#offcanvas-mobile-menu"
-                           class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
-                            <i class="pe-7s-menu"></i>
-                        </a>
-                    </div>
-                    <!-- Header Action End -->
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<jsp:include page="header.jsp"/>
 <!-- Header Area End -->
 <div class="offcanvas-overlay"></div>
 
@@ -284,14 +223,15 @@
                             <div class="login-form-container">
                                 <div class="login-register-form">
                                     <form action="#" method="post">
-                                        <input type="email" name="user-email" placeholder="Email" />
-                                        <input type="password" name="user-password" placeholder="Password" />
+                                        <input type="email" name="user-email" placeholder="Email"/>
+                                        <input type="password" name="user-password" placeholder="Password"/>
                                         <div class="button-box">
                                             <div class="login-toggle-btn">
-                                                <input type="checkbox" />
+                                                <input type="checkbox"/>
                                                 <a class="flote-none" href="javascript:void(0)">Remember me</a>
                                                 <!-- forgot-password.jsp -->
-                                                <a href="#" onclick="forgotPassword();">Forgot Password?</a>
+                                                <a style="cursor: pointer" onclick="forgotPassword();">Forgot
+                                                    Password?</a>
                                             </div>
                                             <script>
                                                 const forgotPassword = () => {
@@ -317,9 +257,10 @@
                             <div class="login-form-container">
                                 <div class="login-register-form">
                                     <form action="#" method="post">
-                                        <input name="user-email" placeholder="Email" type="email" />
-                                        <input type="password" name="user-password" placeholder="Password" />
-                                        <input type="password" name="user-retype_password" placeholder="Retype password" />
+                                        <input name="user-email" placeholder="Email" type="email"/>
+                                        <input type="password" name="user-password" placeholder="Password"/>
+                                        <input type="password" name="user-retype_password"
+                                               placeholder="Retype password"/>
                                         <div class="button-box" style="text-align: center;">
                                             <button type="submit"><span>Register</span></button>
                                         </div>
@@ -331,12 +272,13 @@
                             <div class="login-form-container">
                                 <div class="login-register-form">
                                     <form action="#" method="post">
-                                        <input name="user-email" placeholder="Email" type="email" />
-                                        <input type="password" name="user-password" placeholder="Password" />
-                                        <input type="password" name="user-retype_password" placeholder="Retype password" />
+                                        <input name="user-email" placeholder="Email" type="email"/>
+                                        <input type="password" name="user-password" placeholder="Password"/>
+                                        <input type="password" name="user-retype_password"
+                                               placeholder="Retype password"/>
                                         <div class="button-box" style="text-align: center;">
                                             <div class="login-toggle-btn">
-                                                <input type="checkbox" />
+                                                <input type="checkbox"/>
                                                 <a class="flote-none" href="javascript:void(0)">Remember me</a>
                                             </div>
                                             <button type="submit"><span>Reset</span></button>
@@ -353,150 +295,8 @@
 </div>
 <!-- login area end -->
 
-
-<div class="newsletter-area ">
-    <div class="container line-shape-bottom">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="newsletter-content mb-lm-30px">
-                    <i class="pe-7s-mail-open-file"></i>
-                    <div class="newsletter-text">
-                        <h3 class="title">Newsletter & Get Updates</h3>
-                        <p>Sign up for our newsletter to get update from us</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="news-letter-form">
-                    <div id="mc_embed_signup" class="subscribe-form">
-                        <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank"
-                              name="mc-embedded-subscribe-form" method="post"
-                              action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
-                        >
-                            <div id="mc_embed_signup_scroll" class="mc-form">
-                                <input class="email" type="email" required=""
-                                       placeholder="Enter Your Mail Here......." name="EMAIL" value="">
-                                <div class="mc-news d-none" aria-hidden="true">
-                                    <input type="text" value="" tabindex="-1"
-                                           name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
-                                </div>
-                                <div class="clear">
-                                    <!-- submit -->
-                                    <button id="mc-embedded-subscribe" class="button" type="button" name="subscribe"
-                                            value="" onclick="window.location.href='./404.jsp'"> Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Footer Area Start -->
-<div class="footer-area">
-    <div class="footer-container">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <!-- Start single blog -->
-                    <div class="col-md-6 col-sm-6 col-lg-3 mb-md-30px mb-lm-30px">
-                        <div class="single-wedge">
-                            <h4 class="footer-herading">Information</h4>
-                            <div class="footer-links">
-                                <div class="footer-row">
-                                    <ul class="align-items-center">
-                                        <li class="li"><a class="single-link" href="about.jsp">About us</a></li>
-                                        <li class="li"><a class="single-link" href="privacy-policy.jsp">Privacy
-                                            Policy</a></li>
-                                        <li class="li"><a class="single-link" href="faq.jsp">FAQ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End single blog -->
-                    <!-- Start single blog -->
-                    <div class="col-md-6 col-lg-3 col-sm-6 mb-lm-30px">
-                        <div class="single-wedge">
-                            <h4 class="footer-herading">Account</h4>
-                            <div class="footer-links">
-                                <div class="footer-row">
-                                    <ul class="align-items-center">
-                                        <li class="li"><a class="single-link" href="my-account.jsp"> My account</a>
-                                        </li>
-                                        <li class="li"><a class="single-link" href="cart.jsp">My orders</a></li>
-                                        <!-- <li class="li"><a class="single-link"
-                                                href="shop-left-sidebar.jsp">Shipping</a></li> -->
-                                        <li class="li"><a class="single-link" href="wishlist.jsp">Wish list</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End single blog -->
-                    <!-- Start single blog -->
-                    <div class="col-md-6 col-lg-2 col-sm-6 mb-sm-30px">
-                        <div class="single-wedge">
-                            <h4 class="footer-herading">Store </h4>
-                            <div class="footer-links">
-                                <div class="footer-row">
-                                    <ul class="align-items-center">
-                                        <li class="li"><a class="single-link" href="index.jsp">Home</a></li>
-                                        <li class="li"><a class="single-link"
-                                                          href="shop-left-sidebar.jsp">Bestsellers</a></li>
-                                        <li class="li"><a class="single-link" href="contact.jsp">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End single blog -->
-                    <!-- Start single blog -->
-                    <div class="col-md-6 col-lg-4 col-md-6 col-sm-6 pl-120px line-shape">
-                        <div class="single-wedge ">
-
-                            <h4 class="footer-herading">Contact Us</h4>
-                            <div class="footer-links">
-                                <!-- News letter area -->
-                                <p class="mail">If you have any question.please <br>
-                                    contact us at <a href="mailto:demo@example.com">demo@example.com</a> </p>
-                                <!-- <p class="address"><i class="pe-7s-map-marker"></i> <span>Your address goes here.
-                                        <br>
-                                        123, Address.</span> </p> -->
-                                <p class="phone m-0"><i class="pe-7s-phone"></i><span><a href="tel:0123456789">+ 0 123
-                                                    456 789</a> <br> <a href="tel:0123456789">+ 0 123 456 789</a></span></p>
-
-                                <!-- News letter area  End -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End single blog -->
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="line-shape-top">
-                    <div class="row flex-md-row-reverse align-items-center">
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="payment-mth"><a href="#"><img class="img img-fluid"
-                                                                      src="assets/images/icons/payment.png" alt="payment-image"></a></div>
-                        </div>
-                        <div class="col-md-6 text-center text-md-start">
-                            <p class="copy-text"> © 2021 <strong>Mioca.</strong> Made With <i class="fa fa-heart"
-                                                                                              aria-hidden="true"></i> By <a class="company-name"
-                                                                                                                            href="https://hasthemes.com/">
-                                <strong> Aslan Team</strong></a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<jsp:include page="footer.jsp" />
 <!-- Footer Area End -->
 
 <!-- Search Modal Start -->
